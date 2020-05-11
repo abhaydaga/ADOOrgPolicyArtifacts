@@ -1,0 +1,24 @@
+{
+    "FeatureName":  "Project",
+    "Reference":  "aka.ms/azsktcp/project",
+    "IsMaintenanceMode":  false,
+    "Controls": [
+      {
+        "ControlID": "AzureDevOps_Project_AuthZ_Dont_Set_Visibility_Private",
+        "Description": "Ensure that project visibility is not set to private",
+        "Id": "Project180",
+        "ControlSeverity": "High",
+        "Automated": "Yes",
+        "MethodName": "CheckPrivateProjects",
+        "Rationale": "Data/content in projects that have public visibility can be downloaded by anyone on the internet without authentication. This can lead to a compromise of corporate data.",
+        "Recommendation": "Refer: https://docs.microsoft.com/en-us/azure/devops/organizations/public/make-project-public?view=vsts&tabs=new-nav",
+        "Tags": [
+          "SDL",
+          "TCP",
+          "Automated",
+          "AuthN"
+        ],
+        "Enabled": true
+      }
+]
+}

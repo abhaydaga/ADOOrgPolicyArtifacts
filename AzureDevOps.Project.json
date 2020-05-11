@@ -1,0 +1,14 @@
+{
+    "Controls": [
+        {
+            "ControlID": "AzureDevOps_Project_AuthZ_Limit_Job_Scope_To_Current_Project",
+            "Id": "Project1020",
+            "ControlSeverity": "High"
+        },
+        {
+            "ControlID": "AzureDevOps_Project_AuthZ_Publish_Metadata_From_Pipeline",
+            "Id": "Project1030",
+            "Automated": "No"
+        }
+    ]
+}
